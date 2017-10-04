@@ -1,19 +1,10 @@
-// module.exports = {
-//   entry: "./lib/tprime.js",
-//   output: {
-//   	filename: "./lib/bundle.js"
-//   },
-//   devtool: 'source-map',
-// };
-
-
-
-
+const path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/bench_bnb.jsx",
+  entry: "./lib/tprime.js",
   output: {
+    path: path.resolve(__dirname, 'lib'),
     filename: "bundle.js"
   },
   module: {
