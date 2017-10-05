@@ -10,13 +10,31 @@
   </head>
   <body>
     <h3>tPrime</h3>
-    <div>
-      <button id='world1' class='worlds'>Earth Conditions</button>
-      <button id='world2' class='worlds'>Null Gravity</button>
-      <button id='world3' class='worlds'>High Gravity</button>
+    <div class='worlds'>
+      <button id='world1'>Earth Conditions</button>
+      <button id='world2'>Null Gravity</button>
+      <button id='world3'>High Gravity</button>
     </div>
-    <button id='gravity-button' class=''>Turn Gravity Off</button>
     <script src="./lib/bundle.js"></script>
     <div class='tprime-root'></div>
   </body>
+  <div id="atmosphere-slide">
+    <label>
+      <h3>Atmospheric Gases</h3>
+    <input type="range" min="1" max="100" value="50">
+  </label>
+  </div>
+  <div id="pendulum-mass-slide">
+    <label>
+      <h3>Pendulum Mass</h3>
+    <input type="range" min="1" max="100" value="50">
+  </label>
+  </div>
+  <div id="catapult-mass-slide">
+    <label>
+      <h3>Catapult Mass</h3>
+    <input type="range" min="1" max="100" value="50">
+  </label>
+  </div>
+  <button id='gravity-button'>Turn Gravity Off</button>
 </html>
