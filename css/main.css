@@ -115,12 +115,23 @@ a:hover {
 #canvas-container {
   width: 80%;
   margin: 0 auto;
-  margin-top: 6%;
-  margin-bottom: 6%;
+  margin-top: 3%;
 }
 
 canvas {
   width: 100%;
   background-color: grey;
   border-radius: 10px;
+}
+#user-bar {
+  display:flex;
+}
+
+#user-controls, #stats {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1%;
+  
+}
+#user-age-container, #gravity-state-container {
 }

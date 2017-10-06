@@ -5,11 +5,11 @@
     <title>tPrime</title>
     <link rel="stylesheet" type="text/css" href='./css/main.css'/>
     <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-    <script type='text/javascript' src='matter.js' async></script>
+    <script type='text/javascript' src='matter.js'></script>
+    <script type='text/javascript' src='p5.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-
-
     <div id='links'>
       <a href='https://github.com/snakerabbit/tprime'>GitHub</a>
       <a href='https://www.linkedin.com/in/alison-cheng-b61866149/'>LinkedIn</a>
@@ -29,6 +29,34 @@
     </div>
     <div id="canvas-container">
       <canvas></canvas>
+    </div>
+    <div id='user-bar'>
+      <div id='user-controls'>
+        <div id='atmosphere-control'>
+          <p>Atmospheric Gases</p>
+          <input type='range' min="0" max="10" value="5" class="slider" id="atmosphere">
+        </div>
+        <div id='pendulum-control'>
+          <p>Pendulum Mass</p>
+          <input type='range' min="0" max="10" value="5" class="slider" id="pendulum-mass">
+        </div>
+        <div id='catapult-control'>
+          <p>Catapult Mass</p>
+          <input type='range' min="0" max="10" value="5" class="slider" id="catapult-mass">
+        </div>
+      </div>
+      <div id='stats'>
+        <div id='user-stats'>
+          <div id='user-age-container'>
+            Your Current Age:
+            <p id='current-age'></p>
+          </div>
+          <div id='gravity-stat-container'>
+            Current Gravity Levels:
+            <p id='current-gravity'></p>
+          </div>
+        </div>
+      </div>
     </div>
     <script type='text/javascript' src='./lib/tprime.js'></script>
   </body>
