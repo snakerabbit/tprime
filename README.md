@@ -4,7 +4,7 @@
 
 Users are able to traverse between different states of physical constants and see a visual representation of the differences in the behavior of the objects that can be interacted with.
 
-![tprimelanding](https://image.ibb.co/cCrCDw/Screen_Shot_2017_10_06_at_9_42_30_AM.png)
+![tprimelanding](https://i.imgur.com/EfXeXkZ.png)
 
 ## Features
 In TPrime, users are be able to:
@@ -14,14 +14,14 @@ In TPrime, users are be able to:
 * Toggle the atmospheric gas levels to observe air friction
 * Toggle the mass of pendulum objects and soft objects to observe the effect of mass on gravitational force.
 
-![tprimeopen](https://image.ibb.co/jryymG/Screen_Shot_2017_10_06_at_9_49_28_AM.png)
+![tprimeopen](https://i.imgur.com/7qCvafn.png)
 
 The current age is input and the time following is added and displayed to demonstrate the effects of gravitational field on time using the [Schwarzschild Gravitational Time Dilation][Schwarzschild Gravitational Time Dilation] equation.
 
 
 In addition, the project includes:
 * a How To Play modal to describe how to interact with the simulation
-![tprimemodal](https://image.ibb.co/hBgLYw/Screen_Shot_2017_10_06_at_9_57_57_AM.png)
+![tprimemodal](https://i.imgur.com/cEzKD0X.png)
 
 
 ## Architecture and Technologies
