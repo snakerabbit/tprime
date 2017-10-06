@@ -2,39 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>tprime</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
-    <script src="matter.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>tPrime</title>
+    <link rel="stylesheet" type="text/css" href='./css/main.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <script type='text/javascript' src='matter.js' async></script>
   </head>
   <body>
-    <h3>tPrime</h3>
-    <div class='worlds'>
-      <button id='world1'>Earth Conditions</button>
-      <button id='world2'>Null Gravity</button>
-      <button id='world3'>High Gravity</button>
+
+
+    <div id='links'>
+      <a href='https://github.com/snakerabbit/tprime'>GitHub</a>
+      <a href='https://www.linkedin.com/in/alison-cheng-b61866149/'>LinkedIn</a>
     </div>
-    <script src="./lib/bundle.js"></script>
-    <div class='tprime-root'></div>
+    <h1 id='title'>tPrime</h1>
+    <div id='world-buttons'>
+      <button>Earth</button>
+      <button>Null Gravity</button>
+      <button>High Gravity</button>
+    </div>
+    <div id='initialize'>
+      <div id='age-form'>
+        <h3 id='age-text'>Enter Your Age</h3>
+        <input id='age-input' type="text" id='age' placeholder='age'/>
+        <button id='age-button' onclick="setAge()">Enter</button>
+    </div>
+    </div>
+    <div id="canvas-container">
+      <canvas></canvas>
+    </div>
+    <script type='text/javascript' src='./lib/tprime.js'></script>
   </body>
-  <div id="atmosphere-slide">
-    <label>
-      <h3>Atmospheric Gases</h3>
-    <input type="range" min="1" max="100" value="50">
-  </label>
-  </div>
-  <div id="pendulum-mass-slide">
-    <label>
-      <h3>Pendulum Mass</h3>
-    <input type="range" min="1" max="100" value="50">
-  </label>
-  </div>
-  <div id="catapult-mass-slide">
-    <label>
-      <h3>Catapult Mass</h3>
-    <input type="range" min="1" max="100" value="50">
-  </label>
-  </div>
-  <button id='gravity-button'>Turn Gravity Off</button>
 </html>
