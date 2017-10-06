@@ -16,9 +16,9 @@
     </div>
     <h1 id='title'>tPrime</h1>
     <div id='world-buttons'>
-      <button>Earth</button>
-      <button>Null Gravity</button>
-      <button>High Gravity</button>
+      <button id='earth-button' onclick="setToEarth()">Earth</button>
+      <button id='null-grav-button' onclick="setToNull()">Null Gravity</button>
+      <button id='high-grav-button' onclick="setToHigh()">High Gravity</button>
     </div>
     <div id='initialize'>
       <div id='age-form'>
@@ -27,10 +27,13 @@
         <button id='age-button' onclick="setAge()">Enter</button>
     </div>
     </div>
+
     <div id="canvas-container">
-      <canvas></canvas>
+      <script type='text/javascript' src='./lib/tprime.js'></script>
     </div>
+    <button id='open-user-controls' onclick='openUserControls()'>Open User Controls</button>
     <div id='user-bar'>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeUserControls()">&times;</a>
       <div id='user-controls'>
         <div id='atmosphere-control'>
           <p>Atmospheric Gases</p>
@@ -58,6 +61,5 @@
         </div>
       </div>
     </div>
-    <script type='text/javascript' src='./lib/tprime.js'></script>
   </body>
 </html>

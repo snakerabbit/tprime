@@ -15,7 +15,6 @@
 body {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,14 +123,32 @@ canvas {
   border-radius: 10px;
 }
 #user-bar {
-  display:flex;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+#user-bar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 #user-controls, #stats {
   border: 1px solid white;
   border-radius: 10px;
   padding: 1%;
-  
+
 }
-#user-age-container, #gravity-state-container {
+#open-user-controls{
+  position: fixed;
+  bottom: 0;
 }
