@@ -11,6 +11,7 @@
   </head>
   <body>
     <div id='links'>
+      <div id='how-to' onclick="openHowTo()">How To</div>
       <a href='https://github.com/snakerabbit/tprime'>GitHub</a>
       <a href='https://www.linkedin.com/in/alison-cheng-b61866149/'>LinkedIn</a>
     </div>
@@ -32,6 +33,17 @@
       <script type='text/javascript' src='./lib/tprime.js'></script>
     </div>
     <button id='open-user-controls' onclick='openUserControls()'>Open User Controls</button>
+    <div id='how-to-bar' onclick='closeHowTo()'>
+      <div id='how-to-form'>
+        <h3>Click On The Top Buttons To Travel Between Gravitational Fields</h3>
+        <br/>
+        <h3>Click On The User Controls Button To Open The Controls</h3>
+        <br/>
+        <h3>Move The Bars To Change The Physics Of Your World and See How The Objects React </h3>
+        <br/>
+        <h3>Watch How Time Dilates Between Gravitational Fields in the Stats</h3>
+      </div>
+    </div>
     <div id='user-bar'>
       <a href="javascript:void(0)" class="closebtn" onclick="closeUserControls()">&times;</a>
       <div id='user-controls'>
